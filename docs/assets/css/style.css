@@ -1,0 +1,27 @@
+body, html {
+    background-color: black;
+}
+
+.landing-box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    width: 90%;
+    padding-top: 10px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.img {
+    display: block;
+    width: auto;
+    height: auto;
+    filter: blur(1px);
+}
