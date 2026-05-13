@@ -7,36 +7,66 @@
     <title>Sovereign Research</title>
     <link rel="stylesheet" href="docs/assets/css/style.css">
     <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .landing-box {
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        box-sizing: border-box;
+      }
+
       .content {
         color: white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 36em;
-        padding: 2em;
+        width: 100%;
+        max-width: 36rem;
         text-align: center;
       }
+
       .content h1 {
         font-family: monospace;
-        margin-bottom: 0.3em;
+        font-size: clamp(1.5rem, 5vw, 2rem);
+        margin: 0 0 0.4em;
+        line-height: 1.2;
       }
+
       .content .tagline {
         font-style: italic;
-        margin-bottom: 2.5em;
+        font-size: clamp(0.95rem, 2.5vw, 1.1rem);
         letter-spacing: 0.02em;
+        margin: 0 0 2.5em;
         text-align: center;
       }
+
       .content p {
-        text-align: left;
+        font-size: clamp(0.95rem, 2.5vw, 1.05rem);
         line-height: 1.6;
-        margin-bottom: 1.2em;
+        text-align: left;
+        margin: 0 0 1.2em;
       }
-      .content p.tagline {
-        text-align: center;
-      }
+
       .content p:last-child {
         margin-bottom: 0;
+      }
+
+      @media (max-width: 30rem) {
+        .landing-box {
+          padding: 1rem;
+        }
+
+        .content .tagline {
+          margin-bottom: 2em;
+        }
+
+        .content p {
+          line-height: 1.55;
+        }
       }
     </style>
   </head>
